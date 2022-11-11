@@ -15,26 +15,28 @@ project_custom=(home.html index.html css)
 
 case $input in
     1)
-        # user info
-        echo "project custom to be activated"
         # archive jekyll files
         for x in $project_jekyll
         do
             mv ./$x archive/jekyll_archive/$x > /dev/null 2>&1
         done
+        touch ./archive/custom_archive/.gitkeep
         # unarchive archived contents
         mv archive/custom_archive/* . > /dev/null 2>&1
+        # user info
+        echo "interface >> custom << is activated"
         ;;
     2)
-        # user info
-        echo "project jekyll to be activated"
         # archive custom files
         for x in $project_custom
         do
             mv ./$x archive/custom_archive/$x > /dev/null 2>&1
         done
+        touch ./archive/jekyll_archive/.gitkeep
         # unarchive archived contents
         mv archive/jekyll_archive/* . > /dev/null 2>&1
+        # user info
+        echo "interface >> jekyll << is activated"
         ;;
     *)
         echo "Wrong input terminates w/o taking any actions"
