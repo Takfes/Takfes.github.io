@@ -1,5 +1,11 @@
 # Takfes.github.io
 
+
+## Custom
+
+
+## Jekyll
+
 ### useful links
 * watch [this youtube video](https://www.youtube.com/watch?v=owHfKAbJ6_M&list=PLWzwUIYZpnJuT0sH4BN56P5oWTdHJiTNq)
 * code in [this github repo](https://github.com/BillRaymond/my-jekyll-docker-website)
